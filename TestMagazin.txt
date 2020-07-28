@@ -1,0 +1,95 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.Scanner;
+import java.util.Vector;
+
+public class TestMagazin {
+	public static void main (String[] args) throws IOException {
+		ArrayList<Magazin> magazine = new ArrayList<>();
+		ArrayList<Sediu> sedii = new ArrayList<>();
+		ArrayList<AdresaSediu> adrese = new ArrayList<>();
+		
+		adrese.add(new AdresaSediu("Carrefour", "Franta", "Militari", 235, 60.00, 5, "Bucuresti", "Romania", "Dristor", 67));
+		adrese.add(new AdresaSediu("Practicker", "Romania", "Pantelimon", 162, 30, 3, "Bucuresti", "Romania" ,"Muncii", 77));
+		adrese.add(new AdresaSediu("Lidl", "Germania" ,"Tractorul",  14, 45.04, 4, "Brasov", "Romania" ,"Turnului", 67));
+		adrese.add(new AdresaSediu("Mega","Belgia", "Gemenii", 567, 23.34 , 3 ,"Brasov", "Romania",  "AlexVlahuta", 3));
+		
+		for (AdresaSediu a:adrese) {
+			//System.out.printf("%-15s %-15s %-15s %-15d %-15f  %-15d %-15s %-15s %-15s %-15d \n", a.getDenumire(), a.getTaraDeOrigine(),a.getListaSedii(),a.getNumarAngajati(), a.getVenituriSediu(),a.getGradIncredere(), a.getOras(), a.getTara(),a.getStrada(), a.getNumar() );
+			
+			//System.out.printf("%-15s %-15s", a.getDenumire(),a.getListaSedii()); afisarea magazinelor impreuna cu sediile 
+			
+			/*if (a.getOras() == "Brasov") {
+					System.out.printf("%-15s\n", a.getDenumire()); //cu sedii in brasov
+*/
+	
+			abstract class AdresaSediu1 implements Comparator<NumarAngajati>{
+				@Override
+			   public int compare(NumarAngajati n1, NumarAngajati n2)
+			    {
+			        return n1.NumarAngajati()-n2.NumarAngajati();
+					
+			    }		
+				
+			}
+			
+				System.out.printf("%-15s\n", a.getDenumire());
+			
+
+			abstract class AdresaSediu3 implements Comparator<GradMaximIncredere>{
+				@Override
+			   public int compare(GradMaximIncredere g1, GradMaximIncredere g2)
+			    {
+			        return g1.GradMaximIncredere()-g2.GradMaximIncredere();
+					
+			    }	
+			}
+				System.out.printf("%-15s\n", a.getDenumire());
+
+				abstract class AdresaSediu2 implements Comparator<VenituriSediu>{
+					@Override
+				   public int compare(VenituriSediu v1, VenituriSediu v2)
+				    {
+				        return v1.VenituriSediu()-v2.VenituriSediu();	
+						
+				    }						
+			}
+			System.out.printf("%-15s\n", a.getDenumire());
+			
+				
+			public void afisareMagazin() {
+			}
+			
+		}
+	}
+	
+	
+}
+
+
+
+/*abstract class AdresaSediu implements Comparator<NumarAngajati>{
+	@Override
+   public int compare(NumarAngajati n1, NumarAngajati n2)
+    {
+        return Integer.compare (((Sediu) n1).getNumarAngajati(), ((Sediu) n2).getNumarAngajati());
+		
+    }		
+	
+}
+	*/		
+			
+			
+		
+		/*CitireFisier r = new CitireFisier ();
+		r.openFile();
+		r.readFile();
+		r.closeFile();*/
+	
+
+
+
+

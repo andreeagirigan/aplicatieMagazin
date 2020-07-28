@@ -1,0 +1,5 @@
+Denumire TaraOrig Sediu NrAng Venituri Grad Oras Tara Strada Numar
+Carrefour Franta Militari 235 60 5 Bucuresti Romania CaleaBuc 76
+Practicker Romania Pantelimon 162 30 3 Bucuresti Romania CaleaBuc 77
+Lidl Germania Tractorul 14 45 4	Brasov Romania Turnului 5
+Mega Belgia Gemenii 35 23 3 Brasov Romania AlexVlahuta 3

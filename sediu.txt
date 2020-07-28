@@ -1,0 +1,6 @@
+Adresa	Nrang	venS	gradIncredere
+CBuc	45	60	4
+Mosilor	23	5	3
+Muncii	34	30	5
+
+		
